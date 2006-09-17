@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.n52</groupId>
+    <artifactId>52-North</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>52-North</name>
+    <url>http://fifty-two-north.sourceforge.net/project-sites/</url>
+    <description>
+        The 52 North Project tries to develope opensource solutions for problems relateted to the
+        geo domain.
+    </description>
+    <inceptionYear>2004</inceptionYear>
+    <scm>
+        <!-- Specification of the Source-Content-Managmentsystem -->
+        <connection>
+            scm:svn:https://svn.sourceforge.net/svnroot/fifty-two-north/52-North/trunk
+        </connection>
+        <developerConnection>
+            scm:svn:https://svn.sourceforge.net/svnroot/fifty-two-north/52-North/trunk
+        </developerConnection>
+    </scm>
+    <organization>
+        <name>52 North</name>
+        <url>http://www.52north.org/</url>
+    </organization>
+    <profiles>
+        <profile>
+            <id>dist-custom</id>
+            <!-- The profile is used to customize the distribution management.
+                 The official sourceforge server ist quite slow, so the deploy, release and site-deploy goals
+                 often fail with a timeout exception. So with the help of this profile you can specify
+                 your own servers for the distribution management and later copy the files to the official server.
+
+                 If this profile is activated, then the deploy goals will look for some enviroment variables to
+                 get the server urls and ids.
+               -->
+            <activation>
+                <property>
+                    <name>dist</name>
+                    <value>custom</value>
+                </property>
+            </activation>
+            <!-- here the repositories where the project should deployed to -->
+            <distributionManagement>
+                <repository>
+                    <id>${dist.releases.id}</id>
+                    <name>repository for releases</name>
+                    <url>${dist.releases.url}</url>
+                </repository>
+                <snapshotRepository>
+                    <id>${dist.snapshots.id}</id>
+                    <name>repository for snapshots</name>
+                    <url>${dist.snapshots.url}</url>
+                </snapshotRepository>
+                <site>
+                    <id>${dist.sites.id}</id>
+                    <name>repository for sites</name>
+                    <url>${dist.sites.url}</url>
+                </site>
+            </distributionManagement>
+        </profile>
+    </profiles>
+    <repositories>
+        <repository>
+            <id>n52-snapshots</id>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <name>repository for 52North snapshots</name>
+            <url>http://fifty-two-north.sourceforge.net/maven-repository/snapshots/</url>
+        </repository>
+        <repository>
+            <id>n52-releases</id>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <name>repository for 52North releases</name>
+            <url>http://fifty-two-north.sourceforge.net/maven-repository/releases/</url>
+        </repository>
+    </repositories>
+    <!-- here the repositories where this project should deployed to -->
+    <distributionManagement>
+        <repository>
+            <id>n52-releases-dist</id>
+            <name>repository for 52North releases</name>
+            <url>
+                scpexe://shell.sourceforge.net/home/groups/f/fi/fifty-two-north/htdocs/maven-repository/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>n52-snapshots-dist</id>
+            <name>repository for 52North snapshots</name>
+            <url>
+                scpexe://shell.sourceforge.net/home/groups/f/fi/fifty-two-north/htdocs/maven-repository/snapshots</url>
+        </snapshotRepository>
+        <site>
+            <id>n52-sites-dist</id>
+            <name>repository for 52North project sites</name>
+            <url>
+                scpexe://shell.sourceforge.net/home/groups/f/fi/fifty-two-north/htdocs/project-sites/</url>
+        </site>
+    </distributionManagement>
+</project>

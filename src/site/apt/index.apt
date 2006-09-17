@@ -1,0 +1,128 @@
+~~ $Id: $ ~~
+ -----
+ 52 North Maven Projects
+ -----
+ Marko Reiprecht
+ -----
+
+52 North Maven Projects
+~~~~~~~~~~~~~~~~~~~~~~~
+
+   Welcome to the <<52 North>> project.
+
+* Introduction
+
+    This site is the gateway to all 52 North projects build with <<<Maven 2>>>.
+
+    This project is also the root configuration file for all subprojects.
+    It defines the repositories and distribution servers used by the 52n projects.
+
+    All subprojects should define a parent with following parameters:
+
+    [groupId] org.n52
+
+    [artifactId] 52-North
+
+    [version] 1.0
+
+* 52n Repositories
+
+    Following repositories are defined for releases and snapshots of the projects.
+    These can also be used for third party libraries, which are not deployed in the
+    official Maven 2 repository.
+
+    [n52-releases] http://fifty-two-north.sourceforge.net/maven-repository/releases/
+
+    [n52-snapshots] http://fifty-two-north.sourceforge.net/maven-repository/snapshots/
+
+
+* 52n Distribution Servers
+
+    This are the distribution servers.
+
+    The <n52-releases-dist> and <n52-snapshots-dist> pointing to the places defined above.
+
+    The <n52-sites-dist> point to <<<http://fifty-two-north.sourceforge.net/project-sites/>>> location,
+    but be not afraid to override this location, because the <maven-site-plugin> will extend this url
+    with the <artifactId> of your project,
+
+    e.g http://fifty-two-north.sourceforge.net/project-sites/${artifactId}, or concrete
+    http://fifty-two-north.sourceforge.net/project-sites/52n-security
+
+    [n52-releases-dist] scpexe://shell.sourceforge.net/home/groups/f/fi/fifty-two-north/htdocs/maven-repository/releases
+
+    [n52-snapshots-dist] scpexe://shell.sourceforge.net/home/groups/f/fi/fifty-two-north/htdocs/maven-repository/snapshots
+
+    [n52-sites-dist] scpexe://shell.sourceforge.net/home/groups/f/fi/fifty-two-north/htdocs/project-sites/
+
+* Profiles
+
+    There is only one profile defined.
+
+** dist-custom
+
+    The profile is used to customize the distribution management.
+
+    The official sourceforge server ist quite slow, so the deploy, release and site-deploy goals
+    often fail with a timeout exception. So with the help of this profile you can specify
+    your own servers for the distribution management and later copy the files to the official server.
+
+    If this profile is activated, then the deploy goals will look for some enviroment variables to
+    get the server urls and ids.
+
+    It will look for following properties:
+
+    [dist.releases.id] The Id of the release server.
+
+    [dist.releases.url] The URL of the release server.
+
+    [dist.snapshots.id] The Id of the snapshots server
+
+    [dist.snapshots.url] The URL of the snapshots server
+
+    [dist.sites.id] The Id of the sites server
+
+    [dist.sites.url] The URL of the sites server
+
+    []
+
+    [activation]
+        It is activated through the property <<dist>> with value <<custom>>
+        e.g. mvn -Ddist=custom <<<goal>>>
+
+
+*** The Profile XML
+
++--------------+
+        <profile>
+            <id>dist-custom</id>
+            <activation>
+                <property>
+                    <name>dist</name>
+                    <value>custom</value>
+                </property>
+            </activation>
+            <!-- here the repositories where the project should deployed to -->
+            <distributionManagement>
+                <repository>
+                    <id>${dist.releases.id}</id>
+                    <name>repository for releases</name>
+                    <url>${dist.releases.url}</url>
+                </repository>
+                <snapshotRepository>
+                    <id>${dist.snapshots.id}</id>
+                    <name>repository for snapshots</name>
+                    <url>${dist.snapshots.url}</url>
+                </snapshotRepository>
+                <site>
+                    <id>${dist.sites.id}</id>
+                    <name>repository for sites</name>
+                    <url>${dist.sites.url}</url>
+                </site>
+            </distributionManagement>
+        </profile>
++--------------+
+
+
+
+
