@@ -21,14 +21,16 @@
             <item name="52n Incubator" href="https://www.incubator52n.de/"/>
             <item name="Maven" href="http://maven.apache.org/"/>
         </links>
+        <menu name="Overview">
+            <item name="About" href="index.html"/>
+            <item name="Getting Started" href="getting-started.html"/>
+        </menu>
+        <menu name="52n Projects">
+            <item name="52n Security" href="52n-security/index.html"/>
+        </menu>
         <menu name="Maven 2.0">
             <item name="Maven" href="http://maven.apache.org/"/>
             <item name="APT Format" href="format.html"/>
-        </menu>
-        <menu name="52n Projects">
-            <item name="Security">
-                <item name="52n Security" href="52n-security/index.html"/>
-            </item>
         </menu>
     </body>
 </project>
