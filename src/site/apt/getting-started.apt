@@ -12,7 +12,7 @@ Getting Started
 
     If you specify this project as parent in your own Maven project and
     you try to compile it, than you will get an error.
-    The error says that the <<pom.xml>> with id <org.n52:52-North:1.0>
+    The error says that the <<<artifact>>> with id <<org.n52:52-North:pom:1.0>>
     can not be found using the central repository.
 
     The reason for this is that the 52n artifacts are not deployed to ibiblio, the
@@ -48,7 +48,7 @@ Getting Started
 +----------+
 
 
-    After that simple call <mvn -Dprofile=52n-start compile> so the profile 52n-start will
+    After that simple call <mvn -P 52n-start compile> so the profile 52n-start will
     be activated and the repository is available for maven2.
     It will download the pom.xml of this project into your local maven repository and you will
     never need to activate the <52n-start> profile again, because it defines by self the repositories
