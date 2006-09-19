@@ -8,7 +8,7 @@
 Getting Started
 ~~~~~~~~~~~~~~~~
 
-    There is one issue for newbees to get started with a new 52n Maven project.
+    There is one issue for newbies to get started with a new 52n Maven project.
 
     If you specify this project as parent in your own Maven project and
     you try to compile it, than you will get an error.
