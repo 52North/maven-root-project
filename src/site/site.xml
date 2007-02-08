@@ -17,8 +17,8 @@
     <body>
         <links>
             <item name="52 North" href="http://www.52north.org/"/>
-            <item name="52n Sourceforge" href="http://sourceforge.net/projects/fifty-two-north/"/>
-            <item name="52n Incubator" href="https://www.incubator52n.de/"/>
+            <item name="52n Sourceforge" href="http://sourceforge.net/projects/core-52n/"/>
+            <item name="52n Incubator TWiki" href="http://incubator.52north.org/twiki/bin/view/Main/WebHome"/>
             <item name="Maven" href="http://maven.apache.org/"/>
         </links>
         <menu name="Overview">

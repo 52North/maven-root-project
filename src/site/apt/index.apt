@@ -31,9 +31,9 @@
     These can also be used for third party libraries, which are not deployed in the
     official Maven 2 repository.
 
-    [n52-releases] http://fifty-two-north.sourceforge.net/maven-repository/releases/
+    [n52-releases] http://195.225.105.40/maven/maven-repo/releases/
 
-    [n52-snapshots] http://fifty-two-north.sourceforge.net/maven-repository/snapshots/
+    [n52-snapshots] http://195.225.105.40/maven/maven-repo/snapshots/
 
 
 * 52n Distribution Servers
@@ -42,18 +42,18 @@
 
     The <n52-releases-dist> and <n52-snapshots-dist> pointing to the places defined above.
 
-    The <n52-sites-dist> point to <<<http://fifty-two-north.sourceforge.net/project-sites/>>> location,
+    The <n52-sites-dist> point to <<<http://195.225.105.40/maven/project-sites/>>> location,
     but be not afraid to override this location, because the <maven-site-plugin> will extend this url
     with the <artifactId> of your project,
 
-    e.g http://fifty-two-north.sourceforge.net/project-sites/${artifactId}, or concrete
-    http://fifty-two-north.sourceforge.net/project-sites/52n-security
+    e.g http://195.225.105.40/maven/project-sites/${artifactId}, or concrete
+    http://195.225.105.40/maven/project-sites/52n-security
 
-    [n52-releases-dist] scpexe://shell.sourceforge.net/home/groups/f/fi/fifty-two-north/htdocs/maven-repository/releases
+    [n52-releases-dist] scpexe://195.225.105.40/var/www/maven/maven-repo/releases
 
-    [n52-snapshots-dist] scpexe://shell.sourceforge.net/home/groups/f/fi/fifty-two-north/htdocs/maven-repository/snapshots
+    [n52-snapshots-dist] scpexe://195.225.105.40/var/www/maven/maven-repo/snapshots
 
-    [n52-sites-dist] scpexe://shell.sourceforge.net/home/groups/f/fi/fifty-two-north/htdocs/project-sites/
+    [n52-sites-dist] scpexe://195.225.105.40/var/www/maven/project-sites/
 
 * Profiles
 

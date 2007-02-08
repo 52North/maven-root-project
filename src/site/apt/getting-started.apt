@@ -22,7 +22,7 @@ Getting Started
 
     The realease repository is located at this url:
 
-    [n52-releases] http://fifty-two-north.sourceforge.net/maven-repository/releases/
+    [n52-releases] http://195.225.105.40/maven/maven-repo/releases/
 
     []
 
@@ -35,7 +35,7 @@ Getting Started
     <repository>
       <id>n52-releases</id>
       <name>52n Releases</name>
-      <url>http://fifty-two-north.sourceforge.net/maven-repository/releases/</url>
+      <url>http://195.225.105.40/maven/maven-repo/releases/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
