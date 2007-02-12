@@ -3,23 +3,18 @@
     <!-- $Id: $ -->
     <bannerLeft>
         <name>52 North</name>
-        <src>images/52north.gif</src>
+        <src>images/52north_transp.png</src>
         <href>http://www.52north.org/</href>
     </bannerLeft>
-    <bannerRight>
-        <name>Maven Project</name>
-        <src>http://maven.apache.org/images/apache-maven-project.png</src>
-    </bannerRight>
     <skin>
         <groupId>org.apache.maven.skins</groupId>
-        <artifactId>maven-default-skin</artifactId>
+        <artifactId>maven-stylus-skin</artifactId>
     </skin>
     <body>
         <links>
             <item name="52 North" href="http://www.52north.org/"/>
             <item name="52n Sourceforge" href="http://sourceforge.net/projects/core-52n/"/>
             <item name="52n Incubator TWiki" href="http://incubator.52north.org/twiki/bin/view/Main/WebHome"/>
-            <item name="Maven" href="http://maven.apache.org/"/>
         </links>
         <menu name="Overview">
             <item name="About" href="index.html"/>
