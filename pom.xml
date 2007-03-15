@@ -7,7 +7,7 @@
     <version>1.0</version>
     <packaging>pom</packaging>
     <name>52-North</name>
-    <url>http://195.225.105.40/maven/project-sites/</url>
+    <url>http://incubator.52north.org/maven/project-sites/</url>
     <description>
         The 52 North Project tries to develope opensource solutions for problems relateted to the
         geo domain.
@@ -73,7 +73,7 @@
                 <enabled>false</enabled>
             </releases>
             <name>repository for 52North snapshots</name>
-            <url>http://195.225.105.40/maven/maven-repo/snapshots/</url>
+            <url>http://incubator.52north.org/maven/maven-repo/snapshots/</url>
         </repository>
         <repository>
             <id>n52-releases</id>
@@ -84,7 +84,7 @@
                 <enabled>false</enabled>
             </snapshots>
             <name>repository for 52North releases</name>
-            <url>http://195.225.105.40/maven/maven-repo/releases/</url>
+            <url>http://incubator.52north.org/maven/maven-repo/releases/</url>
         </repository>
     </repositories>
     <!-- here the repositories where this project should deployed to -->
@@ -93,19 +93,19 @@
             <id>n52-releases-dist</id>
             <name>repository for 52North releases</name>
             <url>
-                scpexe://195.225.105.40/var/www/maven/maven-repo/releases</url>
+                scpexe://incubator.52north.org/var/www/maven/maven-repo/releases</url>
         </repository>
         <snapshotRepository>
             <id>n52-snapshots-dist</id>
             <name>repository for 52North snapshots</name>
             <url>
-                scpexe://195.225.105.40/var/www/maven/maven-repo/snapshots</url>
+                scpexe://incubator.52north.org/var/www/maven/maven-repo/snapshots</url>
         </snapshotRepository>
         <site>
             <id>n52-sites-dist</id>
             <name>repository for 52North project sites</name>
             <url>
-                scpexe://195.225.105.40/var/www/maven/project-sites/</url>
+                scpexe://incubator.52north.org/var/www/maven/project-sites/</url>
         </site>
     </distributionManagement>
 </project>
