@@ -21,7 +21,8 @@
             <item name="Getting Started" href="getting-started.html"/>
         </menu>
         <menu name="52n Projects">
-            <item name="52n Security" href="52n-security/index.html"/>
+            <item name="Security API" href="52n-security-api/index.html"/>
+            <item name="Security Applications" href="52n-security-apps/index.html"/>
         </menu>
         <menu name="Maven 2.0">
             <item name="Maven" href="http://maven.apache.org/"/>
