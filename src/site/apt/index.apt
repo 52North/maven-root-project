@@ -8,11 +8,11 @@
 52 North Maven Projects
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-   Welcome to the <<52 North>> project.
+   Welcome to the <<52° North>> project.
 
 * Introduction
 
-    This site is the gateway to all 52 North projects build with <<<Maven 2>>>.
+    This site is the gateway to all 52° North projects build with <<<Maven 2>>>.
 
     This project is also the root configuration file for all subprojects.
     It defines the repositories and distribution servers used by the 52n projects.

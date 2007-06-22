@@ -2,18 +2,17 @@
 <project>
     <!-- $Id: $ -->
     <bannerLeft>
-        <name>52 North</name>
+        <name>52&amp;deg; North</name>
         <src>images/52north_transp.png</src>
         <href>http://www.52north.org/</href>
     </bannerLeft>
     <skin>
         <groupId>org.n52</groupId>
         <artifactId>maven-skin</artifactId>
-        <version>1.0</version>
     </skin>
     <body>
         <links>
-            <item name="52 North" href="http://www.52north.org/"/>
+            <item name="52&amp;deg; North" href="http://www.52north.org/"/>
             <item name="52n Sourceforge" href="http://sourceforge.net/projects/core-52n/"/>
             <item name="52n Incubator TWiki"
                   href="http://incubator.52north.org/twiki/bin/view/Main/WebHome"/>
@@ -22,7 +21,7 @@
             <item name="About" href="index.html"/>
             <item name="Getting Started" href="getting-started.html"/>
         </menu>
-        <menu name="52n Projects">
+        <menu name="52n Projects" inherit="bottom">
             <item name="Security API" href="52n-security-api/index.html"/>
             <item name="Security Applications" href="52n-security-apps/index.html"/>
         </menu>

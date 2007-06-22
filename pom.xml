@@ -6,13 +6,17 @@
     <artifactId>52-North</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
-    <name>52-North</name>
+    <name>52&amp;deg; North</name>
     <url>http://incubator.52north.org/maven/project-sites/</url>
     <description>
         The 52 North Project tries to develope opensource solutions for problems relateted to the
         geo domain.
     </description>
     <inceptionYear>2004</inceptionYear>
+    <issueManagement>
+        <system>Bugzilla</system>
+        <url>https://incubator.52north.org/cgi-bin/bugzilla/index.cgi</url>
+    </issueManagement>
     <scm>
         <!-- Specification of the Source-Content-Managmentsystem -->
         <connection>
@@ -21,9 +25,18 @@
         <developerConnection>
             scm:svn:https://core-52n.svn.sourceforge.net/svnroot/core-52n/52-North/trunk
         </developerConnection>
+        <url>
+            http://core-52n.svn.sourceforge.net/viewvc/core-52n/52-North/trunk
+        </url>
     </scm>
+    <licenses>
+        <license>
+            <name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
+            <url>http://www.gnu.org/licenses/gpl.txt</url>
+        </license>
+    </licenses>
     <organization>
-        <name>52 North</name>
+        <name>52north.org</name>
         <url>http://www.52north.org/</url>
     </organization>
     <profiles>
