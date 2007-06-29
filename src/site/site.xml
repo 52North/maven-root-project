@@ -22,8 +22,9 @@
             <item name="Getting Started" href="getting-started.html"/>
         </menu>
         <menu name="52n Projects" inherit="bottom">
-            <item name="Security API" href="52n-security-api/index.html"/>
-            <item name="Security Applications" href="52n-security-apps/index.html"/>
+            <item name="Security API" href="http://incubator.52north.org/maven/project-sites/52n-security-api/"/>
+            <item name="Security Applications" href="http://incubator.52north.org/maven/project-sites/52n-security-apps/"/>
+            <item name="Security Applications" href="http://incubator.52north.org/maven/project-sites/52n-routingFramework/"/>
         </menu>
         <menu name="Maven 2.0">
             <item name="Maven" href="http://maven.apache.org/"/>
