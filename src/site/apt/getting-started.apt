@@ -12,7 +12,7 @@ Getting Started
 
     If you specify this project as parent in your own Maven project and
     you try to compile it, than you will get an error.
-    The error says that the <<<artifact>>> with id <<org.n52:52-North:pom:RELEASE>>
+    The error says that the <<<artifact>>> with id <<<org.n52:52-North:pom:RELEASE>>>
     can not be found using the central repository.
 
     The reason for this is that the 52n artifacts are not deployed to ibiblio, the
