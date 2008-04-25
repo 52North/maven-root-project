@@ -23,7 +23,7 @@
             scm:svn:http://52north.org/svn/52n/maven-root-project/trunk
         </connection>
         <developerConnection>
-            scm:svn:http://52north.org/svn/52n/maven-root-project/trunk
+            scm:svn:https://52north.org/svn/52n/maven-root-project/trunk
         </developerConnection>
         <url>
             http://52north.org/cgi-bin/viewvc.cgi/maven-root-project/trunk/?root=52n
