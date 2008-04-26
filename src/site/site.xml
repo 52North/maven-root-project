@@ -12,18 +12,18 @@
     </skin>
     <body>
         <links>
-            <item name="52&amp;deg; North" href="http://www.52north.org/"/>
-            <item name="52n Sourceforge" href="http://sourceforge.net/projects/core-52n/"/>
-            <item name="52n Incubator TWiki"
-                  href="http://incubator.52north.org/twiki/bin/view/Main/WebHome"/>
+            <item name="52&amp;deg; North Home" href="http://www.52north.org/"/>
+            <item name="52&amp;deg; North Wiki"
+                  href="https://52north.org/twiki"/>
         </links>
         <menu name="Overview">
             <item name="About" href="index.html"/>
             <item name="Getting Started" href="getting-started.html"/>
         </menu>
-        <menu name="52n Projects" inherit="bottom">
+        <menu name="52&amp;deg; North" inherit="bottom">
             <item name="Security" href="http://incubator.52north.org/maven/project-sites/52n-security-site/"/>
             <item name="SWE" href="http://incubator.52north.org/maven/project-sites/swe/"/>
+            <item name="Geo-Processing" href="http://52north.org/index.php?option=com_content&amp;task=view&amp;id=187&amp;Itemid=187"/>
             <item name="Routing Framework" href="http://incubator.52north.org/maven/project-sites/52n-routingFramework/"/>
         </menu>
     </body>
