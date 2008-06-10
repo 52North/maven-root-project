@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.n52</groupId>
     <artifactId>52-North</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
     <name>52&amp;deg; North</name>
-    <url>http://incubator.52north.org/maven/project-sites/</url>
+    <url>http://52north.org/maven/project-sites</url>
     <description>
         The 52 North Project tries to develope opensource solutions for problems relateted to the
         geo domain.
@@ -39,6 +39,17 @@
         <name>52north.org</name>
         <url>http://www.52north.org/</url>
     </organization>
+<!--
+    <build>
+      <extensions>
+         <extension>
+            <groupId>org.apache.maven.wagon</groupId>
+            <artifactId>wagon-webdav-jackrabbit</artifactId>
+            <version>1.0-beta-3</version>
+         </extension>
+      </extensions>
+    </build>
+-->
     <profiles>
         <profile>
             <id>dist-custom</id>
@@ -86,7 +97,7 @@
                 <enabled>false</enabled>
             </releases>
             <name>repository for 52North snapshots</name>
-            <url>http://incubator.52north.org/maven/maven-repo/snapshots/</url>
+            <url>http://52north.org/maven/repo/snapshots/</url>
         </repository>
         <repository>
             <id>n52-releases</id>
@@ -97,7 +108,7 @@
                 <enabled>false</enabled>
             </snapshots>
             <name>repository for 52North releases</name>
-            <url>http://incubator.52north.org/maven/maven-repo/releases/</url>
+            <url>http://52north.org/maven/repo/releases/</url>
         </repository>
     </repositories>
     <!-- here the repositories where this project should deployed to -->
@@ -105,20 +116,17 @@
         <repository>
             <id>n52-releases-dist</id>
             <name>repository for 52North releases</name>
-            <url>
-                scpexe://incubator.52north.org/var/www/maven/maven-repo/releases</url>
+            <url>dav:https://52north.org/maven/repo/releases</url>            
         </repository>
         <snapshotRepository>
             <id>n52-snapshots-dist</id>
             <name>repository for 52North snapshots</name>
-            <url>
-                scpexe://incubator.52north.org/var/www/maven/maven-repo/snapshots</url>
+            <url>dav:https://52north.org/maven/repo/snapshots</url>
         </snapshotRepository>
         <site>
             <id>n52-sites-dist</id>
             <name>repository for 52North project sites</name>
-            <url>
-                scpexe://incubator.52north.org/var/www/maven/project-sites/</url>
+            <url>dav:https://52north.org/maven/project-sites</url>
         </site>
     </distributionManagement>
 </project>
