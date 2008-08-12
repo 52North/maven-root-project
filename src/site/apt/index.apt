@@ -8,11 +8,11 @@
 52 North Maven Projects
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-   Welcome to the <<52° North>> project.
+   Welcome to the <<52&deg;North>> project.
 
 * Introduction
 
-    This site is the gateway to all 52° North projects build with <<<Maven 2>>>.
+    This site is the gateway to all 52&deg; North projects build with <<<Maven 2>>>.
 
     This project is also the root configuration file for all subprojects.
     It defines the repositories and distribution servers used by the 52n projects.
@@ -23,7 +23,7 @@
 
     [artifactId] 52-North
 
-    [version] RELEASE
+    [version] 1.0.3
 
 * 52n Repositories
 
@@ -31,9 +31,9 @@
     These can also be used for third party libraries, which are not deployed in the
     official Maven 2 repository.
 
-    [n52-releases] http://incubator.52north.org/maven/maven-repo/releases/
+    [n52-releases] ttp://52north.org/maven/repo/releases/
 
-    [n52-snapshots] http://incubator.52north.org/maven/maven-repo/snapshots/
+    [n52-snapshots] http://52north.org/maven/repo/snapshots/
 
 
 * 52n Distribution Servers
@@ -42,18 +42,18 @@
 
     The <n52-releases-dist> and <n52-snapshots-dist> pointing to the places defined above.
 
-    The <n52-sites-dist> point to <<<http://incubator.52north.org/maven/project-sites/>>> location,
-    but be not afraid to override this location, because the <maven-site-plugin> will extend this url
+    The <n52-sites-dist> points to <<<http://52north.org/maven/project-sites/>>> location,
+    but don't be afraid to override this location, because the <maven-site-plugin> will extend this url
     with the <artifactId> of your project,
 
-    e.g http://incubator.52north.org/maven/project-sites/${artifactId}, or concrete
-    http://incubator.52north.org/maven/project-sites/52n-security
+    e.g http://52north.org/maven/project-sites/${artifactId}, or concrete
+    http://http://52north.org/maven/project-sites/52n-security
 
-    [n52-releases-dist] scpexe://incubator.52north.org/var/www/maven/maven-repo/releases
+    [n52-releases-dist] dav:https://52north.org/maven/repo/releases
 
-    [n52-snapshots-dist] scpexe://incubator.52north.org/var/www/maven/maven-repo/snapshots
+    [n52-snapshots-dist] dav:https://52north.org/maven/repo/snapshots
 
-    [n52-sites-dist] scpexe://incubator.52north.org/var/www/maven/project-sites/
+    [n52-sites-dist] dav:https://52north.org/maven/project-sites
 
 * Profiles
 
@@ -63,9 +63,6 @@
 
     The profile is used to customize the distribution management.
 
-    The official sourceforge server ist quite slow, so the deploy, release and site-deploy goals
-    often fail with a timeout exception. So with the help of this profile you can specify
-    your own servers for the distribution management and later copy the files to the official server.
 
     If this profile is activated, then the deploy goals will look for some enviroment variables to
     get the server urls and ids.

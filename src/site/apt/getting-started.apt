@@ -12,7 +12,7 @@ Getting Started
 
     If you specify this project as parent in your own Maven project and
     you try to compile it, than you will get an error.
-    The error says that the <<<artifact>>> with id <<<org.n52:52-North:pom:RELEASE>>>
+    The error says that the <<<artifact>>> with id <<<org.n52:52-North:pom:1.0.3>>>
     can not be found using the central repository.
 
     The reason for this is that the 52n artifacts are not deployed to ibiblio, the
@@ -23,7 +23,7 @@ Getting Started
 
     The realease repository is located at this url:
 
-    [n52-releases] http://incubator.52north.org/maven/maven-repo/releases/
+    [n52-releases] http://52north.org/maven/repo/releases/
 
     []
 
@@ -38,7 +38,7 @@ Getting Started
     <repository>
       <id>n52-releases</id>
       <name>52n Releases</name>
-      <url>http://incubator.52north.org/maven/maven-repo/releases/</url>
+      <url>http://52north.org/maven/repo/releases/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
