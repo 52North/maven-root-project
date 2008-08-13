@@ -24,7 +24,7 @@
             <item name="Security" href="http://www.52north.org/security"/>
             <item name="SWE" href="http://www.52north.org/swe"/>
             <item name="Geo-Processing" href="http://52north.org/maven/project-sites/wps/52n-wps-site/"/>
-            <item name="Routing Framework" href="http://52north.org/index.php?option=com_projects&task=showProject&id=29&Itemid=127"/>
+            <item name="Routing Framework" href="http://52north.org/index.php?option=com_projects&amp;task=showProject&amp;id=29&amp;Itemid=127"/>
         </menu>
     </body>
 </project>
