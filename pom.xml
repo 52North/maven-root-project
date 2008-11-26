@@ -6,11 +6,10 @@
     <artifactId>52-North</artifactId>
     <version>3</version>
     <packaging>pom</packaging>
-    <name>52&amp;deg; North</name>
+    <name>52&amp;deg; North Root Project</name>
     <url>http://52north.org/maven/project-sites</url>
     <description>
-        The 52 North Project tries to develope opensource solutions for problems relateted to the
-        geo domain.
+        The 52North Project develops innovative Open Source solutions for spatial data infrastructures.
     </description>
     <inceptionYear>2004</inceptionYear>
     <issueManagement>
