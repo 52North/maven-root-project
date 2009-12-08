@@ -46,7 +46,25 @@ Getting Started
         <enabled>false</enabled>
       </snapshots>
     </repository>
+      <repository>
+        <id>n52-snapshots</id>
+        <name>52n Snapshots</name>
+        <url>http://52north.org/maven/repo/snapshots/</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <snapshots>
+        </snapshots>
+    </repository>
   </repositories>
+  <pluginRepositories>
+     <pluginRepository>
+        <id>n52-releases</id>
+        <name>52n Releases</name>
+        <url>http://52north.org/maven/repo/releases/</url>
+    </pluginRepository>              
+  </pluginRepositories>            
+
 </profile>
 
 ...
