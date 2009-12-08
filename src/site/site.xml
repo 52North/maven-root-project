@@ -27,7 +27,7 @@
             <item name="Geo-Processing" href="http://www.52north.org/wps"/>
             <item name="ILWIS" href="http://www.52north.org/ilwis"/>
             <item name="Semantics" href="http://www.52north.org/semantics"/>
-            <item name="Geostatistics" href="http://www.52north.org/index.php?option=com_content&view=category&layout=blog&id=50&Itemid=313"/>
+            <item name="Geostatistics" href="http://www.52north.org/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=50&amp;Itemid=313"/>
             <item name="Students Corner" href="http://www.52north.org/index.php?option=com_content&amp;view=article&amp;id=298&amp;Itemid=278"/>
         </menu>
     </body>
