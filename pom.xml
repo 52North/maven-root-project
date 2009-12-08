@@ -85,6 +85,23 @@
                 </site>
             </distributionManagement>
         </profile>
+		<profile>
+			<id>env-site</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>site</value>
+				</property>
+			</activation>
+			<distributionManagement>
+				<site>
+					<id>n52-sites-dist</id>
+					<name>repository for 52North project sites</name>
+					<url>dav:https://www.52north.org/maven/project-sites/</url>
+				</site>
+			</distributionManagement>
+		</profile>
+        
     </profiles>
     <repositories>
         <repository>
@@ -123,4 +140,5 @@
             <url>dav:https://52north.org/maven/repo/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
+    
 </project>

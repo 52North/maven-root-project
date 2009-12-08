@@ -23,7 +23,7 @@
 
     [artifactId] 52-North
 
-    [version] 2
+    [version] 5
 
 * 52n Repositories
 
@@ -31,7 +31,7 @@
     These can also be used for third party libraries, which are not deployed in the
     official Maven 2 repository.
 
-    [n52-releases] ttp://52north.org/maven/repo/releases/
+    [n52-releases] http://52north.org/maven/repo/releases/
 
     [n52-snapshots] http://52north.org/maven/repo/snapshots/
 
