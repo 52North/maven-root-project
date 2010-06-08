@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.n52</groupId>
     <artifactId>52-North</artifactId>
-    <version>5</version>
+    <version>5.1</version>
     <packaging>pom</packaging>
     <name>52&amp;deg; North Root Project</name>
     <url>http://52north.org/maven/project-sites</url>
@@ -19,13 +19,13 @@
     <scm>
         <!-- Specification of the Source-Content-Managmentsystem -->
         <connection>
-            scm:svn:http://52north.org/svn/52n/maven-root-project/trunk
+            scm:svn:https://svn.52north.org/svn/52n/maven-root-project/trunk
         </connection>
         <developerConnection>
-            scm:svn:https://52north.org/svn/52n/maven-root-project/trunk
+            scm:svn:https://svn.52north.org/svn/52n/maven-root-project/trunk
         </developerConnection>
         <url>
-            http://52north.org/cgi-bin/viewvc.cgi/maven-root-project/trunk/?root=52n
+            http://svn.52north.org/cgi-bin/viewvc.cgi/maven-root-project/trunk/?root=52n
         </url>
     </scm>
     <licenses>
@@ -38,7 +38,7 @@
         <name>52north.org</name>
         <url>http://www.52north.org/</url>
     </organization>
-<!--
+    <!--
     <build>
       <extensions>
          <extension>
@@ -49,6 +49,25 @@
       </extensions>
     </build>
 -->
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.0</version>
+            </plugin>
+        </plugins>
+    </build>
+
     <profiles>
         <profile>
             <id>dist-custom</id>
@@ -85,23 +104,23 @@
                 </site>
             </distributionManagement>
         </profile>
-		<profile>
-			<id>env-site</id>
-			<activation>
-				<property>
-					<name>env</name>
-					<value>site</value>
-				</property>
-			</activation>
-			<distributionManagement>
-				<site>
-					<id>n52-sites-dist</id>
-					<name>repository for 52North project sites</name>
-					<url>dav:https://www.52north.org/maven/project-sites/</url>
-				</site>
-			</distributionManagement>
-		</profile>
-        
+        <profile>
+            <id>env-site</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>site</value>
+                </property>
+            </activation>
+            <distributionManagement>
+                <site>
+                    <id>n52-sites-dist</id>
+                    <name>repository for 52North project sites</name>
+                    <url>dav:https://www.52north.org/maven/project-sites/</url>
+                </site>
+            </distributionManagement>
+        </profile>
+
     </profiles>
     <repositories>
         <repository>
@@ -140,5 +159,5 @@
             <url>dav:https://52north.org/maven/repo/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-    
+
 </project>
