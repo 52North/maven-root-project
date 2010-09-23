@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.n52</groupId>
     <artifactId>52-North</artifactId>
-    <version>5.1</version>
+    <version>5.2</version>
     <packaging>pom</packaging>
     <name>52&amp;deg; North Root Project</name>
     <url>http://52north.org/maven/project-sites</url>
@@ -14,7 +14,7 @@
     <inceptionYear>2004</inceptionYear>
     <issueManagement>
         <system>Bugzilla</system>
-        <url>https://52north.org/bugzilla/</url>
+        <url>https://bugzilla.52north.org/</url>
     </issueManagement>
     <scm>
         <!-- Specification of the Source-Content-Managmentsystem -->
