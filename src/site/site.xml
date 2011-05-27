@@ -9,7 +9,7 @@
     <skin>
         <groupId>org.n52</groupId>
         <artifactId>maven-skin</artifactId>
-        <version>4</version>
+        <version>5</version>
     </skin>
     <body>
         <links>
@@ -20,15 +20,6 @@
         <menu name="Overview">
             <item name="About" href="index.html"/>
             <item name="Getting Started" href="getting-started.html"/>
-        </menu>
-        <menu name="52N Communities" inherit="bottom">
-            <item name="Sensor Web" href="http://www.52north.org/swe"/>
-            <item name="Security &amp; GeoRM" href="http://www.52north.org/security"/>
-            <item name="Geo-Processing" href="http://www.52north.org/wps"/>
-            <item name="ILWIS" href="http://www.52north.org/ilwis"/>
-            <item name="Semantics" href="http://www.52north.org/semantics"/>
-            <item name="Geostatistics" href="http://www.52north.org/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=50&amp;Itemid=313"/>
-            <item name="Students Corner" href="http://www.52north.org/index.php?option=com_content&amp;view=article&amp;id=298&amp;Itemid=278"/>
         </menu>
     </body>
 </project>
