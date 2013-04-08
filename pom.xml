@@ -1,182 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>org.n52</groupId>
-    <artifactId>52-North</artifactId>
-    <version>5.6.4</version>
-    <packaging>pom</packaging>
-    <name>52&amp;deg; North Root Project</name>
-    <url>http://52north.org/maven/project-sites</url>
-    <description>
-        The 52North Project develops innovative Open Source solutions for spatial data infrastructures.
-    </description>
-    <inceptionYear>2004</inceptionYear>
-    <issueManagement>
-        <system>Bugzilla</system>
-        <url>https://bugzilla.52north.org/</url>
-    </issueManagement>
-    <scm>
-        <!-- Specification of the Source-Content-Managmentsystem -->
-        <connection>
-            scm:svn:https://svn.52north.org/svn/52n/maven-root-project/trunk
-        </connection>
-        <developerConnection>
-            scm:svn:https://svn.52north.org/svn/52n/maven-root-project/trunk
-        </developerConnection>
-        <url>
-            http://svn.52north.org/cgi-bin/viewvc.cgi/maven-root-project/trunk/?root=52n
-        </url>
-    </scm>
-    <licenses>
-        <license>
-            <name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
-            <url>http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</url>
-        </license>
-    </licenses>
-    <organization>
-        <name>52north.org</name>
-        <url>http://www.52north.org/</url>
-    </organization>
-    <!--
-    <build>
-      <extensions>
-         <extension>
-            <groupId>org.apache.maven.wagon</groupId>
-            <artifactId>wagon-webdav-jackrabbit</artifactId>
-            <version>1.0-beta-3</version>
-         </extension>
-      </extensions>
-    </build>
--->
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>2.1</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-site-plugin</artifactId>
-                    <version>2.3</version>
-                </plugin>                
-            </plugins>
-        </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-            </plugin>                
-        </plugins>
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-webdav-jackrabbit</artifactId>
-                <version>1.0-beta-7</version>
-            </extension>
-        </extensions>
-    </build>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.n52</groupId>
+	<artifactId>52-North</artifactId>
+	<version>5.6.5</version>
+	<packaging>pom</packaging>
+	<name>52&amp;deg; North Root Project</name>
+	<url>http://52north.org/maven/project-sites</url>
+	<description>
+		The 52North Project develops innovative Open Source solutions for spatial
+		data infrastructures.
+	</description>
+	<inceptionYear>2004</inceptionYear>
+	<issueManagement>
+		<system>Bugzilla</system>
+		<url>https://bugzilla.52north.org/</url>
+	</issueManagement>
+	<scm>
+		<!-- Specification of the Source-Content-Managmentsystem -->
+		<connection>
+			scm:svn:https://svn.52north.org/svn/52n/maven-root-project/trunk
+		</connection>
+		<developerConnection>
+			scm:svn:https://svn.52north.org/svn/52n/maven-root-project/trunk
+		</developerConnection>
+		<url>
+			http://svn.52north.org/cgi-bin/viewvc.cgi/maven-root-project/trunk/?root=52n
+		</url>
+	</scm>
+	<licenses>
+		<license>
+			<name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
+			<url>http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</url>
+		</license>
+	</licenses>
+	<organization>
+		<name>52north.org</name>
+		<url>http://www.52north.org/</url>
+	</organization>
+	<!-- <build> <extensions> <extension> <groupId>org.apache.maven.wagon</groupId> 
+		<artifactId>wagon-webdav-jackrabbit</artifactId> <version>1.0-beta-3</version> 
+		</extension> </extensions> </build> -->
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>2.3</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-descriptor</id>
+						<goals>
+							<goal>attach-descriptor</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav-jackrabbit</artifactId>
+				<version>1.0-beta-7</version>
+			</extension>
+		</extensions>
+	</build>
 
-    
-    
-    
-    
-    <profiles>
-        <profile>
-            <id>dist-custom</id>
-            <!-- The profile is used to customize the distribution management.
-                 The official sourceforge server ist quite slow, so the deploy, release and site-deploy goals
-                 often fail with a timeout exception. So with the help of this profile you can specify
-                 your own servers for the distribution management and later copy the files to the official server.
 
-                 If this profile is activated, then the deploy goals will look for some enviroment variables to
-                 get the server urls and ids.
-               -->
-            <activation>
-                <property>
-                    <name>dist</name>
-                    <value>custom</value>
-                </property>
-            </activation>
-            <!-- here the repositories where the project should deployed to -->
-            <distributionManagement>
-                <repository>
-                    <id>${dist.releases.id}</id>
-                    <name>repository for releases</name>
-                    <url>${dist.releases.url}</url>
-                </repository>
-                <snapshotRepository>
-                    <id>${dist.snapshots.id}</id>
-                    <name>repository for snapshots</name>
-                    <url>${dist.snapshots.url}</url>
-                </snapshotRepository>
-                <site>
-                    <id>${dist.sites.id}</id>
-                    <name>repository for sites</name>
-                    <url>${dist.sites.url}</url>
-                </site>
-            </distributionManagement>
-        </profile>
-        <profile>
-            <id>env-site</id>
-            <activation>
-                <property>
-                    <name>env</name>
-                    <value>site</value>
-                </property>
-            </activation>
-            <distributionManagement>
-                <site>
-                    <id>n52-sites-dist</id>
-                    <name>repository for 52North project sites</name>
-                    <url>dav:https://www.52north.org/maven/project-sites/</url>
-                </site>
-            </distributionManagement>
-        </profile>
 
-    </profiles>
-    <repositories>
-        <repository>
-            <id>n52-snapshots</id>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <name>repository for 52North snapshots</name>
-            <url>http://52north.org/maven/repo/snapshots/</url>
-        </repository>
-        <repository>
-            <id>n52-releases</id>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <name>repository for 52North releases</name>
-            <url>http://52north.org/maven/repo/releases/</url>
-        </repository>
-    </repositories>
-    <!-- here the repositories where this project should deployed to -->
-    <distributionManagement>
-        <repository>
-            <id>n52-releases-dist</id>
-            <name>repository for 52North releases</name>
-            <url>dav:https://52north.org/maven/repo/releases</url>            
-        </repository>
-        <snapshotRepository>
-            <id>n52-snapshots-dist</id>
-            <name>repository for 52North snapshots</name>
-            <url>dav:https://52north.org/maven/repo/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+
+
+	<profiles>
+		<profile>
+			<id>dist-custom</id>
+			<!-- The profile is used to customize the distribution management. The 
+				official sourceforge server ist quite slow, so the deploy, release and site-deploy 
+				goals often fail with a timeout exception. So with the help of this profile 
+				you can specify your own servers for the distribution management and later 
+				copy the files to the official server. If this profile is activated, then 
+				the deploy goals will look for some enviroment variables to get the server 
+				urls and ids. -->
+			<activation>
+				<property>
+					<name>dist</name>
+					<value>custom</value>
+				</property>
+			</activation>
+			<!-- here the repositories where the project should deployed to -->
+			<distributionManagement>
+				<repository>
+					<id>${dist.releases.id}</id>
+					<name>repository for releases</name>
+					<url>${dist.releases.url}</url>
+				</repository>
+				<snapshotRepository>
+					<id>${dist.snapshots.id}</id>
+					<name>repository for snapshots</name>
+					<url>${dist.snapshots.url}</url>
+				</snapshotRepository>
+				<site>
+					<id>${dist.sites.id}</id>
+					<name>repository for sites</name>
+					<url>${dist.sites.url}</url>
+				</site>
+			</distributionManagement>
+		</profile>
+		<profile>
+			<id>env-site</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>site</value>
+				</property>
+			</activation>
+			<distributionManagement>
+				<site>
+					<id>n52-sites-dist</id>
+					<name>repository for 52North project sites</name>
+					<url>dav:https://www.52north.org/maven/project-sites/</url>
+				</site>
+			</distributionManagement>
+		</profile>
+
+	</profiles>
+	<repositories>
+		<repository>
+			<id>n52-snapshots</id>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<name>repository for 52North snapshots</name>
+			<url>http://52north.org/maven/repo/snapshots/</url>
+		</repository>
+		<repository>
+			<id>n52-releases</id>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<name>repository for 52North releases</name>
+			<url>http://52north.org/maven/repo/releases/</url>
+		</repository>
+	</repositories>
+	<!-- here the repositories where this project should deployed to -->
+	<distributionManagement>
+		<repository>
+			<id>n52-releases-dist</id>
+			<name>repository for 52North releases</name>
+			<url>dav:https://52north.org/maven/repo/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>n52-snapshots-dist</id>
+			<name>repository for 52North snapshots</name>
+			<url>dav:https://52north.org/maven/repo/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>
