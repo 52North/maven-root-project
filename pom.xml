@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.n52</groupId>
 	<artifactId>52-North</artifactId>
-	<version>5.6.6</version>
+	<version>5.6.7</version>
 	<packaging>pom</packaging>
 	<name>52&amp;deg; North Root Project</name>
 	<url>http://52north.org/maven/project-sites</url>
@@ -36,7 +36,7 @@
 	</licenses>
 	<organization>
 		<name>52north.org</name>
-		<url>http://www.52north.org/</url>
+		<url>http://52north.org/</url>
 	</organization>
 	<!-- <build> <extensions> <extension> <groupId>org.apache.maven.wagon</groupId> 
 		<artifactId>wagon-webdav-jackrabbit</artifactId> <version>1.0-beta-3</version> 
